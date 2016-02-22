@@ -37,20 +37,25 @@
 }
 #cardPile {
     width: 1200px;
-    height: 120px;
+    height: 120px; /*120*/
     padding: 20px;
+    margin-left:150px; /*this is how i centered*/
+    margin-top:50px;
 }
 #cardSlots {
     width: 1200px;
     height: 1000px;
     padding: 20px;
+    margin-left:150px; /*how i centered*/
     font-family: Arial, Helvetica, sans-serif;
     line-height: normal;
 }
+
+/*this is how we change the individual boxes*/
 #cardSlots div, #cardPile div {
     float: left;
-    width: 80px;
-    height: 50px;
+    width: 150px;/*80*/
+    height: 150px; /*50px*/
     padding: 10px;
     padding-bottom: 0;
     border: 1px solid #333;

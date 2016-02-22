@@ -21,6 +21,7 @@ http://www.philharmonia.co.uk/explore/instruments/harp -->
 
 
 <link rel="stylesheet" href="css/tooltips.css">
+<link rel="stylesheet" href="css/magnific-popup.css">
 
 
 
@@ -47,7 +48,7 @@ http://www.philharmonia.co.uk/explore/instruments/harp -->
 						<h2>What's in an Orchestra?</h2>
 						<p>
 
-							Ever wondered what some of those funny-looking instruments in the orchestra are, or what they sound like? Check
+							Have you ever wondered what some of those funny-looking instruments in the orchestra are, or what they sound like? Check
 							out the following slideshow to find out!
 						</p>
 
@@ -66,7 +67,7 @@ http://www.philharmonia.co.uk/explore/instruments/harp -->
 					<div style="color:white">
 						<h2>Double Bass</h2>   <!--Daniel Barbiero-->
 						<p>
-							The double bass is the biggest and lowest-sounding instrument with strings in the orchestra. Sometimes the double bass gets a solo, but it's
+							The double bass is the biggest and lowest-sounding instrument in the orchestra's string section. Sometimes the double bass gets a solo, but it's
 							more common for it to stay in the background.
 
 						</p>
@@ -119,12 +120,12 @@ http://www.philharmonia.co.uk/explore/instruments/harp -->
 					<div>
 						<h2>Saxophone</h2>
 						<p>
-						 The saxophone is most well known in jazz music, but it can be used in orchestras too! It has a really harsh sound
+						 The saxophone is most well-known in jazz music, but it can be used in orchestras too! It has a really harsh sound
 						 which makes it easy to distinguish from the rest of the orchestra.
 					 </p>
 					 <br>
 					 <p>
-						 There are six different types of saxophone but they are all played using a mouthpiece called a reed.
+						 There are six different types of saxophone, but they are all played using a mouthpiece called a reed.
 					</p>
 					<br>
 					<p style="font-style:italic">
@@ -146,7 +147,7 @@ http://www.philharmonia.co.uk/explore/instruments/harp -->
 					<div>
 						<h2>Trumpet</h2>
 						<p>
-						The trumpet has a very loud and brassy sound, so its often used to belt out an important melody. It looks kind of like
+						The trumpet has a very loud and brassy sound, so it is often used to belt out an important melody. It looks kind of like
 						a paperclip, but it would actually be about 6 1/2 feet long unwound!
 
 						</p>
@@ -179,7 +180,7 @@ http://www.philharmonia.co.uk/explore/instruments/harp -->
 						</p>
 						<br>
 						<p>The harps used in orchestra have 47 different strings. They also have seven pedals that can change
-							the sound of those strings. All of that makes tuning a harp a very extensive process!
+							the sound of those strings. All of that makes tuning the harp a very extensive process!
 						</p>
 						<br>
 						<p style="font-style:italic">
@@ -201,11 +202,12 @@ http://www.philharmonia.co.uk/explore/instruments/harp -->
 					<div>
 
 						<h2>Quiz Time!</h2>
-						<p>Think you know all there is to know about the strange instruments of the orchestra?</p>
-						<a class="btn" id="click">Yes! I'm ready!</a>
+						<p>Think you know all there is to know about the funny-looking instruments of the orchestra?</p>
+						<a class="btn" href="quiz.html" class="ajax-popup-link">Yes! I'm ready!</a>
 						<a class="btn" href="">Not yet...I'd like to review one more time!</a>
 						<a class="btn hide" href="matching-game.html">Nah, I'd rather play a game</a>
-						<a class="simple-ajax-popup-align-top" href="site-assets/ajax/test-ajax.html">Load content via ajax</a><br>
+
+
 
 
 					</div>
@@ -213,6 +215,7 @@ http://www.philharmonia.co.uk/explore/instruments/harp -->
 
 				</div> <!-- .cd-half-block.content -->
 			</li>
+
 
 
 
@@ -282,23 +285,25 @@ http://www.philharmonia.co.uk/explore/instruments/harp -->
 <script src="js/slickQuiz.js"></script>
 <script src="js/master-quiz.js"></script>-->
 <script src="js/avgrund/jquery.avgrund.js"></script>
+<script src="js/jquery.magnific-popup.js"></script>
+
+
+
 <script>
 
 $(document).ready(function() {
 $("a[title]").tooltips();
 
-	$('.simple-ajax-popup-align-top').magnificPopup({
+	/*$('.simple-ajax-popup-align-top').magnificPopup({
 		type: 'ajax',
 		alignTop: true,
 		overflowY: 'scroll' // as we know that popup content is tall we set scroll overflow by default to avoid jump
-	});
-
-	$('.simple-ajax-popup').magnificPopup({
-		type: 'ajax'
+	});*/
+	$('.ajax-popup-link').magnificPopup({
+	  type: 'ajax'
 	});
 
 });
-
 
 
 
