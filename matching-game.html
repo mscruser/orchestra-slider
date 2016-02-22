@@ -6,14 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Orchestra Slider</title>
+<link href='https://fonts.googleapis.com/css?family=Fira+Sans:400,300,700' rel='stylesheet' type='text/css'>
+
+    <title>What's in an Orchestra?</title>
 
     <!-- Latest compiled and minified CSS -->
 
 
-
+<link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/matching-styles.css">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+
 
     </head>
 
@@ -25,26 +27,27 @@
     <![endif]-->
 
   <body>
-    <p>Let's see if you can remember which instrument is which!</p>
-    <p>Drag each instrument to match up with its name. </p>
-
+<div id="head-text">
+    <h1 class="text" >Let's see if you can remember which instrument is which!</h1>
+    <p class="text">Drag each instrument to match up with its name. </p>
+</div>
     <div id="content" class="container content">
         <!-- Modal -->
 
         <div id="cardPile" class="row">
-            <div id="element_1" class="col-sm-12"><img src="img/double-bass.jpg" width= "70%" height="100%"></div>
-            <div id="element_2" class="col-sm-12">Card 2</div>
-            <div id="element_3" class="col-sm-12">Card 3</div>
-            <div id="element_4" class="col-sm-12">Card 4</div>
-            <div id="element_5" class="col-sm-12">Card 5</div>
+            <div id="element_1" class="col-xs-6"><img src="img/double-bass.jpg" alt="double-bass" width= "70%" height="100%"></div>
+            <div id="element_2" class="col-xs-6"><img src="img/trumpet.jpg" alt="trumpet" width="70%" height="100%"></div>
+            <div id="element_3" class="col-xs-6"><img src="img/french-horn.jpg" alt="french-horn" width="70%" height="100%"></div>
+            <div id="element_4" class="col-xs-6"><img src="img/harp.jpg" alt="harp" width="70%" height="100%"></div>
+            <div id="element_5" class="col-xs-6"><img src="img/sax.jpg" alt="sax"width="70%" height="100%"></div>
 
         </div>
         <div id="cardSlots" class="row">
-            <div id="slot_2" class="col-sm-12"></div>
-              <div id="slot_1" class="col-sm-12">Double Bass</div>
-              <div id="slot_3" class="col-sm-12"></div>
-              <div id="slot_4" class="col-sm-12"></div>
-              <div id="slot_5" class="col-sm-12"></div>
+            <div id="slot_5" class="col-sm-12">Saxophone</div>
+              <div id="slot_4" class="col-sm-12">Harp</div>
+              <div id="slot_2" class="col-sm-12">Trumpet</div>
+              <div id="slot_1" class="col-sm-12">Double bass</div>
+              <div id="slot_3" class="col-sm-12">French horn</div>
         </div>
     </div>
 
@@ -60,7 +63,7 @@
                 </div>
                 <div class="modal-body">Everything was matched :)</div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> <a href="www.google.com"><button type="button" class="btn btn-primary">Next</button></a>
+                 <a href="index.html"><button type="button" class="btn btn-primary">Sweet, take me home!</button></a>
 
                 </div>
             </div>
@@ -76,8 +79,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <!-- Latest compiled and minified JavaScript -->
-<script src="js/jquery-ui.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
   <script src="js/matching.js"></script>
+
 
   </body>
 </html>

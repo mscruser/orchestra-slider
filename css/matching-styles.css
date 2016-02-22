@@ -2,13 +2,22 @@
 
 /* CSS Document */
  body {
-    margin: 30px;
-    font-family: Arial, Helvetica, sans-serif;
+    margin: 5%; /*30px*/
+    /*font-family: Arial, Helvetica, sans-serif;
     line-height: 1.8em;
-    color: #333;
+    color: #333;*/
+
+
+
+      font-size: 1.6rem;
+      font-family: "Fira Sans", sans-serif; /*Fira Sans*/
+      color: #767070;
+      background-color: #ffffff;
+    }
+
 }
 #content {
-    margin: 80px 70px;
+    margin: 15% 11%; /*80px 70px; */
     text-align: center;
     -moz-user-select: none;
     -webkit-user-select: none;
@@ -18,35 +27,35 @@
  .wideBox {
     clear: both;
     text-align: center;
-    margin: 70px;
-    padding: 10px;
+    margin: 11%;/*70px;*/
+    padding: 3%; /*10px;*/
     background: #ebedf2;
     border: 1px solid #333;
 }
 .wideBox h1 {
     font-weight: bold;
-    margin: 20px;
+    margin: 15%;/*20px;*/
     color: #666;
     font-size: 1.5em;
 }
 #cardSlots {
-    margin: 50px auto 0 auto;
+    margin: 5% auto 0 auto; /*50*/
 }
 #cardPile {
     margin: 0 auto;
 }
 #cardPile {
-    width: 1200px;
+   width: 80%; /*1200px;*/
     height: 120px; /*120*/
-    padding: 20px;
-    margin-left:150px; /*this is how i centered*/
-    margin-top:50px;
+    padding:20px;
+    margin-left: 13%;/*150px this is how i centered*/
+    margin-top: 4%; /*50px*/
 }
 #cardSlots {
-    width: 1200px;
+    width: 80%; /*1200px;*/
     height: 1000px;
     padding: 20px;
-    margin-left:150px; /*how i centered*/
+    margin-left:13%; /*how i centered*/
     font-family: Arial, Helvetica, sans-serif;
     line-height: normal;
 }
@@ -54,7 +63,7 @@
 /*this is how we change the individual boxes*/
 #cardSlots div, #cardPile div {
     float: left;
-    width: 150px;/*80*/
+    width:150px;/*80*/
     height: 150px; /*50px*/
     padding: 10px;
     padding-bottom: 0;
@@ -87,7 +96,16 @@
     -webkit-box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
     box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
 }
-#card1.correct {
+/*#card1.correct {
     background: #5fcf80;
     color: #fff;
+}*/
+
+.text{
+  text-align:center;
+}
+
+#head-text{
+  margin-top:50px;
+  color: #767070;
 }
