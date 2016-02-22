@@ -7,16 +7,19 @@
 	<link href='https://fonts.googleapis.com/css?family=Fira+Sans:400,300,700' rel='stylesheet' type='text/css'>
 
 
-<!--<link rel="stylesheet" href="css/reset-quiz.css">-->
 
-	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
-	<!--<link rel="stylesheet"  href="css/master-quiz.css">-->
-	<!--<link  rel="stylesheet"  href="css/slickQuiz.css">-->
-	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+
+<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+<link rel="stylesheet" href="css/style.css">
+
 
 <!--Resources for information on the instruments: http://www.sfskids.org/classic/templates/instorchframe.asp?pageid=3
 http://www.philharmonia.co.uk/explore/instruments/harp -->
 
+<!--Resource for creating the matching game: http://jsfiddle.net/u0a7m5L6/ -->
+
+<!--Resource for creating the quiz: https://github.com/jewlofthelotus/SlickQuiz-->
+<!--Resource for creating the slider: https://codyhouse.co/gem/pointy-slider/ -->
 
 
 
@@ -24,9 +27,8 @@ http://www.philharmonia.co.uk/explore/instruments/harp -->
 <link rel="stylesheet" href="css/magnific-popup.css">
 
 
+<script src="js/modernizr.js"></script> <!-- Modernizr -->
 
-	<script src="js/modernizr.js"></script> <!-- Modernizr -->
-	<!--<link rel="stylesheet" href="js/avgrund/style/avgrund.css">-->
 
 
 
@@ -67,7 +69,7 @@ http://www.philharmonia.co.uk/explore/instruments/harp -->
 					<div style="color:white">
 						<h2>Double Bass</h2>   <!--Daniel Barbiero-->
 						<p>
-							The double bass is the biggest and lowest-sounding instrument in the orchestra's string section. Sometimes the double bass gets a solo, but it's
+							The double bass is the biggest and lowest-sounding instrument in the string section. Sometimes the double bass gets a solo, but it's
 							more common for it to stay in the background.
 
 						</p>
@@ -179,7 +181,7 @@ http://www.philharmonia.co.uk/explore/instruments/harp -->
 							but it can make some very beautiful sounds. It wasn't really used in orchestras until the 1800s.
 						</p>
 						<br>
-						<p>The harps used in orchestra have 47 different strings. They also have seven pedals that can change
+						<p>The harps used in orchestras have 47 different strings. They also have seven pedals that can change
 							the sound of those strings. All of that makes tuning the harp a very extensive process!
 						</p>
 						<br>
@@ -203,9 +205,10 @@ http://www.philharmonia.co.uk/explore/instruments/harp -->
 
 						<h2>Quiz Time!</h2>
 						<p>Think you know all there is to know about the funny-looking instruments of the orchestra?</p>
-						<a class="btn" href="quiz.html" class="ajax-popup-link">Yes! I'm ready!</a>
+						<a class="btn" href="quiz.html">Yes! I'm ready!</a>
 						<a class="btn" href="">Not yet...I'd like to review one more time!</a>
 						<a class="btn hide" href="matching-game.html">Nah, I'd rather play a game</a>
+
 
 
 
@@ -217,114 +220,23 @@ http://www.philharmonia.co.uk/explore/instruments/harp -->
 			</li>
 
 
+</div>
 
 
-
-
-
-
-
-
-<!--the following commented out code would be for teh quiz plugin if i can ever get it working-->
-		<!--	<li>
-				<div class="cd-half-block image"></div>
-				<div onmouseover="document.getElementById('harp').play()" onmouseout="document.getElementById('harp').pause()" class="holder">
-					<audio id="harp" src="harp.mp3"></audio>
-
-				</div>
-				<div class="cd-half-block content">
-					<div id="slickQuiz" class="quiz-body">
-					        <h1 class="quizName">  where the quiz name goes </h1>-->
-
-					<!--        <div class="quizArea">
-					            <div class="quizHeader">
-					                where the quiz main copy goes
-
-					                <a class="button startQuiz" href="#">Get Started!</a>
-					            </div>
-
-					            where the quiz gets built
-					        </div>
-
-					        <div class="quizResults">
-					            <h3 class="quizScore">You Scored: <span> where the quiz score goes</span></h3>
-
-					            <h3 class="quizLevel"><strong>Ranking:</strong> <span>where the quiz ranking level goes</span></h3>
-
-					            <div class="quizResultsCopy">
-					                 where the quiz result copy goes
-					            </div>
-					        </div>
-
-					</div>
-</div>  .cd-half-block.content
-			</li>-->
-
-
-
-
-		</ul> <!-- .cd-slider -->
+</ul> <!-- .cd-slider -->
 	</div> <!-- .cd-slider-wrapper -->
 
 
 <script src="js/jquery-2.1.4.js"></script>
 <script src="js/jquery.mobile.custom.min.js"></script>
 
-
-
-
 <script src="js/main.js"></script> <!-- Resource jQuery -->
-
-
-
-
-
-
-<script src="js/tooltips.js"></script>
-<!--<script src="js/slickQuiz-config.js"></script>
-<script src="js/slickQuiz.js"></script>
-<script src="js/master-quiz.js"></script>-->
-<script src="js/avgrund/jquery.avgrund.js"></script>
-<script src="js/jquery.magnific-popup.js"></script>
-
-
 
 <script>
 
 $(document).ready(function() {
-$("a[title]").tooltips();
-
-	/*$('.simple-ajax-popup-align-top').magnificPopup({
-		type: 'ajax',
-		alignTop: true,
-		overflowY: 'scroll' // as we know that popup content is tall we set scroll overflow by default to avoid jump
-	});*/
-	$('.ajax-popup-link').magnificPopup({
-	  type: 'ajax'
-	});
 
 });
-
-
-
-
-/*this is a popup window that kind of works with an iframe, but behaves poorly on mobile
-/*$("#click").avgrund({
-width:500,
-height:300,
-	 template: "<iframe src='quiz.html' height= '100%' width='100%'></iframe>"
-});*/
-
-
-
-
-
-
-/*$(function () {
-    $('#slickQuiz').slickQuiz({
-        // options
-    });
-});*/
 </script>
 
 </body>

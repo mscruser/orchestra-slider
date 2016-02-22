@@ -108,15 +108,6 @@ background-color:#6ec9ba;
   background-image: url(../img/double-bass.jpg);
 background-size:contain;
 background-color:white;
-/*border-top-width:1px;
-border-top-color:#ccd0c1;
-border-top-style:solid;
-border-bottom-width:1px;
-border-bottom-color:#ccd0c1;
-border-bottom-style:solid;
-border-right-width:1px;
-border-right-color:#ccd0c1;
-border-right-style:solid;*/
 }
 .cd-slider li:nth-of-type(3) .image {
   background-image: url(../img/french-horn.jpg);
@@ -148,7 +139,6 @@ border-right-style:solid;*/
   background-size:40%;
   background-color:#64bfb0;
 }
-
 
 
 
@@ -185,7 +175,7 @@ border-right-style:solid;*/
 /*this is how we change the slide background color*/
 
 .cd-slider li:nth-of-type(2) .content {
-  background-color: #64bfb0; /*#ccd0c1;*/
+  background-color: #64bfb0;
 }
 .cd-slider li:nth-of-type(3) .content {
   background-color: #f3b96c;
@@ -194,7 +184,7 @@ border-right-style:solid;*/
   background-color: #f46c6a;
 }
 .cd-slider li:nth-of-type(5) .content {
-  background-color: #64bfb0; /*#ccd0c1;*/
+  background-color: #64bfb0; 
 }
 
 .cd-slider li:nth-of-type(6) .content {
@@ -402,4 +392,6 @@ Slider Navigation
   .hide{
     visibility:hidden;
   }
+
+
 }
